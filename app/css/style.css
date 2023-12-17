@@ -1,0 +1,56 @@
+ body {
+     font-family: Arial, sans-serif;
+     background-color: #ffffff;
+     color: #333;
+     margin: 0;
+     padding: 20px;
+ }
+
+ label {
+     display: block;
+     margin-bottom: 5px;
+ }
+
+ select,
+ input[type="number"] {
+     padding: 8px;
+     margin-bottom: 15px;
+     width: 200px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     vertical-align: middle;
+
+ }
+
+ select {
+     cursor: pointer;
+ }
+
+ select:focus,
+ input[type="number"]:focus {
+     outline: none;
+     border-color: #000000;
+ }
+
+ select option {
+     background-color: #fff;
+ }
+
+ select:hover,
+ input[type="number"]:hover {
+     border-color: #fff700;
+ }
+
+ button {
+     padding: 10px 20px;
+     background-color: #333;
+     color: #fff;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+ button:hover {
+     background-color: #555;
+ }
+

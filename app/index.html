@@ -1,0 +1,77 @@
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Convertisseur d'échelle en architecture</title>
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <label for="scaleFactor">Facteur d'échelle :</label>
+        <select id="scaleFactor" class="scale-factor-input" onchange="updateValues('scaleFactor')">
+            <option value="5">1:5</option>
+            <option value="10">1:10</option>
+            <option value="20">1:20</option>
+            <option value="25">1:25</option>
+            <option value="50">1:50</option>
+            <option value="75">1:75</option>
+            <option value="100" selected>1:100</option>
+            <option value="200">1:200</option>
+            <option value="250">1:250</option>
+            <option value="500">1:500</option>
+            <option value="750">1:750</option>
+            <option value="1000">1:1000</option>
+            <option value="1250">1:1250</option>
+            <option value="1500">1:1500</option>
+            <option value="2000">1:2000</option>
+            <option value="2500">1:2500</option>
+            <option value="5000">1:5000</option>
+            <option value="7500">1:7500</option>
+            <option value="10000">1:10000</option>
+            <option value="12500">1:12500</option>
+            <option value="15000">1:15000</option>
+            <option value="20000">1:20000</option>
+            <option value="25000">1:25000</option>
+            <option value="50000">1:50000</option>
+            <option value="75000">1:75000</option>
+            <option value="100000">1:100000</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="realValue">Valeur Réelle :</label>
+        <input type="number" id="realValue" placeholder="Valeur réelle" value="1" oninput="updateValues('realValue')">
+        <select id="realUnit" onchange="updateValues('realUnit')">
+            <option value="mm">mm</option>
+            <option value="cm">cm</option>
+            <option value="m" selected>m</option>
+            <option value="in">in</option>
+            <option value="ft">ft</option>
+            <option value="yd">yd</option>
+            <option value="km">km</option>
+            <option value="mi">mi</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="planValue">Valeur sur Plan :</label>
+        <input type="number" id="planValue" placeholder="Valeur sur plan" value="1" oninput="updateValues('planValue')">
+        <select id="planUnit" onchange="updateValues('planUnit')">
+            <option value="mm">mm</option>
+            <option value="cm" selected>cm</option>
+            <option value="m">m</option>
+            <option value="in">in</option>
+            <option value="ft">ft</option>
+            <option value="yd">yd</option>
+            <option value="km">km</option>
+            <option value="mi">mi</option>
+        </select>
+    </div>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
